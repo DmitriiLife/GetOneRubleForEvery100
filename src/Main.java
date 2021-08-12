@@ -4,12 +4,13 @@ public class Main {
         int check = 100;
         int replenishment = 100;
         int bonus = replenishment / 100;
-        if (replenishment <= 100) {
-            check = 200;
+        if (replenishment <= 1000) {
+            check = check + replenishment;
+            bonus = 0;
             System.out.println("Ваш Счёт: " + check);
             System.out.println("Ваши бонусы: " + bonus);
         } else {
-            check = 1200;
+            check = check + replenishment + bonus;
             System.out.println("Ваш Счёт: " + check);
             System.out.println("Ваши бонусы: " + bonus);
         }
