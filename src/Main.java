@@ -7,13 +7,11 @@ public class Main {
         if (replenishment <= 1000) {
             check = check + replenishment;
             bonus = 0;
-            System.out.println("Ваш Счёт: " + check);
-            System.out.println("Ваши бонусы: " + bonus);
         } else {
             check = check + replenishment + bonus;
-            System.out.println("Ваш Счёт: " + check);
-            System.out.println("Ваши бонусы: " + bonus);
         }
+        System.out.println("Ваш Счёт: " + check);
+        System.out.println("Ваши бонусы: " + bonus);
         System.out.println("Спасибо, что выбрали нас!");
     }
 }
